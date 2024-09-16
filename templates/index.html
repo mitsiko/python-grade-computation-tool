@@ -21,10 +21,11 @@
 
     {% if result %}
         <h3>Results</h3>
-        <p>Prelim Grade: {{ result.prelim }}</p>
+        <p>(With the given Prelim Grade of {{ result.prelim }}, to achieve a passing grade of 75...) </p>
         {% if result.pass_possible %}
-            <p>Required Midterm Grade: {{ result.required_midterm }}</p>
-            <p>Required Final Grade: {{ result.required_final }}</p>
+            <p> </p>
+            <p class="bold">Your Required Midterm Grade is: {{ result.required_midterm }}</p>
+            <p class="bold">Your Required Final Grade is: {{ result.required_final }}</p>
         {% else %}
             <p>It is not possible to pass with the given Prelim grade.</p>
         {% endif %}

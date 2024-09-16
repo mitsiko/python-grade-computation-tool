@@ -1,12 +1,15 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #fefbec;
     padding: 20px;
+    margin-top: 10rem;
     text-align: center;
 }
 
 h1 {
-    color: #333;
+    color: #473c38;
+    font-family: monospace;
+    font-size: 2.5rem;
 }
 
 form {
@@ -20,16 +23,28 @@ input {
 
 button {
     padding: 8px 15px;
-    background-color: #007BFF;
-    color: white;
+    background-color: #473c38;
+    color: #fefbec;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #74bfad;
+    color: #fefbec;
 }
 
 p {
     font-size: 16px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+
+.highlight{
+    
 }
